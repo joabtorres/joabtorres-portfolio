@@ -1,37 +1,61 @@
 # WEBSITE: Joab Torres Alencar
 
-Desenvolvi este portfólio com o objetivo de divulgação minhas habilidades técnicas como `Analista de Sistema`, é também para divulgar uma auto bibliografia profissional ao meu respeito com possibilidade de acesso ao meu currículo empresarial é acadêmico. 
+Desenvolvi este portfólio com o objetivo de divulgar minhas habilidades técnicas como `Analista de Sistema`, é também para descrever auto bibliografia profissional, com possibilidade de acesso ao meu currículo empresarial é acadêmico. 
 
 ### Tecnologias Utilizadas:
 `HTML 5` `CSS 3` `JavaScript` `jQuery` `PHP 8.2.^` `MySQL` `MVC`
 
 
-## Configuração de diretorios
- - `shared`
-   -- `fontawesome`
-   -- `styles`
-   -- `scripts`
-   -- `views` views externas da aplicação
-   --- `email`
- - `source` core da aplicação
-   -- `App` controlles
-   -- `Boot`  configurações
-   -- `Core` core
-   -- `Models` models
-   -- `Support` bibliotecas externas
- - `storage` arquivos feito upload
-   -- `media` 
-   -- `files` 
-   -- `images` 
-   -- `cache` 
- - `themes` views da aplicação
-  -- `joabtorres` view
-  --- `_template` template html
-  --- `assets`
-  ---- `css`
-  ---- `js`
-  ---- `images`
- - `vendor` composer
+## Diretórios
+  `\shared`
+
+   -- `\fontawesome`
+   
+   -- `\styles`
+   
+   -- `\scripts`
+   
+   -- `\views` views externas da aplicação
+   
+   --- `\email`
+   
+ `\source` core da aplicação
+   
+   -- `\App` controlles
+   
+   -- `\Boot`  configurações
+   
+   -- `\Core` core
+   
+   -- `\Models` models
+   
+   -- `\Support` bibliotecas externas
+   
+ `\storage` arquivos feito upload
+   
+   -- `\media`
+   
+   -- `\files`
+   
+   -- `\images`
+   
+   -- `\cache`
+   
+`themes` views da aplicação
+   
+  -- `\joabtorres` view
+  
+  --- `\_template` template html
+  
+  --- `\assets`
+  
+  ---- `\css`
+  
+  ---- `\js`
+  
+  ---- `\images`
+  
+  `\vendor` composer
 
 
 ## SETUP
@@ -44,24 +68,34 @@ Desenvolvi este portfólio com o objetivo de divulgação minhas habilidades té
 4º Configure as constantes;
 
 /**
- * DATABASE
+DATABASE
  */
+
 define("CONF_DB_HOST", "localhost");
+
 define("CONF_DB_USER", "root");
+
 define("CONF_DB_PASS", "");
+
 define("CONF_DB_NAME", "nome_do_banco");
 
 /**
- * PROJECT URLs
+PROJECT URLs
  */
+
 define("CONF_URL_TEST", "https://joabtorres-portfolio.loc");
 
 /**
- * MAIL
+  MAIL
+  (necessário ter uma conta no sendgrid.net)
  */
+
 define("CONF_MAIL_PASS", "");
+
 define("CONF_MAIL_SENDER", ["name" => "", "address" => ""]);
+
 define("CONF_MAIL_SUPPORT", "");
+
 define("CONF_MAIL_DESTINATARY", "");
 
 
