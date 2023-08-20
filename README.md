@@ -9,51 +9,51 @@ Desenvolvi este portfólio com o objetivo de divulgar minhas habilidades técnic
 ## Diretórios
   `\shared`
 
-   -- `\fontawesome`
+   -- `\shared\fontawesome`
    
-   -- `\styles`
+   -- `\shared\styles`
    
-   -- `\scripts`
+   -- `\shared\scripts`
    
-   -- `\views` views externas da aplicação
+   -- `\shared\views` views externas da aplicação
    
-   --- `\email`
+   --- `\shared\views\email`
    
  `\source` core da aplicação
    
-   -- `\App` controlles
+   -- `\source\App` controlles
    
-   -- `\Boot`  configurações
+   -- `\source\Boot`  configurações
    
-   -- `\Core` core
+   -- `\source\Core` core
    
-   -- `\Models` models
+   -- `\source\Models` models
    
-   -- `\Support` bibliotecas externas
+   -- `\source\Support` bibliotecas externas
    
  `\storage` arquivos feito upload
    
-   -- `\media`
+   -- `\storage\media`
    
-   -- `\files`
+   -- `\storage\files`
    
-   -- `\images`
+   -- `\storage\images`
    
-   -- `\cache`
+   -- `\storage\cache`
    
-`themes` views da aplicação
+`\themes` views da aplicação
    
-  -- `\joabtorres` view
+  -- `\themes\joabtorres` view
   
-  --- `\_template` template html
+  --- `\themes\_template` template html
   
-  --- `\assets`
+  --- `\themes\assets`
   
-  ---- `\css`
+  ---- `\themes\css`
   
-  ---- `\js`
+  ---- `\themes\js`
   
-  ---- `\images`
+  ---- `\themes\images`
   
   `\vendor` composer
 
