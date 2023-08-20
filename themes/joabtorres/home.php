@@ -10,6 +10,7 @@
                     <ul>
                         <li><a href="<?= url("#container-home"); ?>">Inicial</a></li>
                         <li><a href="<?= url("#container-about"); ?>">Sobre</a></li>
+                        <li><a href="<?= url("#container-skills"); ?>">Skills</a></li>
                         <li><a href="<?= url("#container-projects"); ?>">Projetos</a></li>
                         <li><a href="<?= url("#container-contacts"); ?>">Contato</a></li>
                     </ul>
@@ -74,7 +75,7 @@
             </article>
         </section>
     </article>
-    <article id="container-projects">
+    <article id="container-skills">
         <section>
             <h2 class="title-container"><i class="fa-solid fa-laptop-code text-blue-light"></i> SKILLS</h2>
             <div class="list-skills">
@@ -114,7 +115,7 @@
                     <p>MVC</p>
                     <img src="<?= theme("assets/images/skills-mvc.png"); ?>" alt="Skill | MVC" title="Skill | MVC">
                     <div class="skill-bar">
-                        <div class="skill-bar-mysql">
+                        <div class="skill-bar-mvc">
                         </div>
                     </div>
                 </div>
@@ -126,7 +127,27 @@
                         </div>
                     </div>
                 </div>
+                <div class="skill">
+                    <p>Android</p>
+                    <img src="<?= theme("assets/images/skills-android.png"); ?>" alt="Skill | MariaDB/MySQL" title="Skill | MariaDB/MySQL">
+                    <div class="skill-bar">
+                        <div class="skill-bar-android">
+                        </div>
+                    </div>
+                </div>
+                <div class="skill">
+                    <p>Kotlin</p>
+                    <img src="<?= theme("assets/images/skills-kotlin.png"); ?>" alt="Skill | MariaDB/MySQL" title="Skill | MariaDB/MySQL">
+                    <div class="skill-bar">
+                        <div class="skill-bar-kotlin">
+                        </div>
+                    </div>
+                </div>
             </div>
+        </section>
+    </article>
+    <article id="container-projects">
+        <section>
             <h2 class="title-container"><i class="fa-solid fa-laptop-code text-blue-light"></i> PROJETOS</h2>
             <div class="list-projects">
                 <?php if (!empty($projects)) : ?>

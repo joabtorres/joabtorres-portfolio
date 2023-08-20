@@ -2,13 +2,10 @@
 
 namespace Source\App;
 
-use RuntimeException;
 use Source\Core\Connect;
 use Source\Core\Controller;
 use Source\Core\View;
-use Source\Models\Category;
 use Source\Models\Project;
-use Source\Models\User;
 use Source\Support\Email;
 use stdClass;
 
@@ -41,7 +38,7 @@ class Web extends Controller
             CONF_SITE_NAME . " - " . CONF_SITE_TITLE,
             CONF_SITE_DESC,
             url(),
-            theme("/assets/image/share.jpg")
+            theme("/assets/images/share.jpg"),
         );
         echo $this->view->render("home", [
             "head" => $head,

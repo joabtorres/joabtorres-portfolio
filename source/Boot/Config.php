@@ -3,10 +3,10 @@
 /**
  * DATABASE
  */
-define("CONF_DB_HOST", "localhost");
+define("CONF_DB_HOST", "172.16.238.10");
 define("CONF_DB_USER", "root");
 define("CONF_DB_PASS", "");
-define("CONF_DB_NAME", "nome_do_banco");
+define("CONF_DB_NAME", "bd_joabtorres");
 
 /**
  * PROJECT URLs
@@ -20,7 +20,7 @@ define("CONF_URL_ADMIN", "/admin");
  */
 define("CONF_SITE_NAME", "Joab Torres");
 define("CONF_SITE_TITLE", "Analista de Sistema &lt;/&gt;");
-define("CONF_SITE_DESC", "Olá meu nome é Joab, seja bem-vindo ao meu Portfólio Profissional. Fique a vontade conhcer mais ao meu respeito, é também visualizar alguns projetos desenvolvidos por mim, caso fique interessado em entrar em contato, você poderá utilizar a sessão de contato presente neste site");
+define("CONF_SITE_DESC", "Olá meu nome é Joab, seja bem-vindo ao meu portfólio profissional. Fique a vontade para conhecer mais ao meu respeito, é também visualizar alguns projetos desenvolvidos por mim, caso fique interessado em entrar em contato, você poderá utilizar a sessão de contato presente neste site");
 define("CONF_SITE_LANG", "pt_BR");
 define("CONF_SITE_DOMAIN", "joabtorres.com.br");
 define("CONF_SITE_ADDR_STREET", "Travessa Amapa");

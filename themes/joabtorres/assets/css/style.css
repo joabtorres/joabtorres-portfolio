@@ -54,6 +54,7 @@
     0% {
         -webkit-transform: rotate(0deg);
     }
+
     100% {
         -webkit-transform: rotate(360deg);
     }
@@ -63,6 +64,7 @@
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
@@ -76,12 +78,15 @@
     text-transform: uppercase;
     font-size: 25pt;
 }
+
 .text-blue-light {
     color: var(--blue-light)
 }
+
 .text-indent {
     text-indent: 50px;
 }
+
 .message-alert {
     font-size: 12pt;
     padding: 10px;
@@ -95,6 +100,7 @@
     border: 2px solid var(--color-success);
     color: var(--color-success);
 }
+
 .message-info {
     display: block;
     border: 2px solid var(--color-info);
@@ -378,31 +384,29 @@ footer>section {
 /**
     #container-projects - skills e projetos
 **/
-#container-projects {
+#container-skills {
     margin-top: -2px;
     padding-top: 450px;
-    min-height: 100vh;
+    padding-bottom: 0;
     background-color: #203142;
     color: var(--color-text-default);
 }
 
-#container-projects>section {
+#container-skills>section {
     padding-top: 100px;
-    padding-bottom: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-#container-projects>section .list-skills {
+#container-skills>section .list-skills {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
-    margin-bottom: 100px;
 }
 
-#container-projects .list-skills .skill {
+#container-skills .list-skills .skill {
     margin: 10px 20px;
     display: flex;
     width: 120px;
@@ -410,23 +414,18 @@ footer>section {
     align-items: center;
 }
 
-#container-projects .list-skills .skill p {
+#container-skills .list-skills .skill p {
     font-size: 12pt;
     margin-bottom: 10px;
 }
 
 .skill .skill-bar,
-.skill .skill-bar .skill-bar-html,
-.skill .skill-bar .skill-bar-css,
-.skill .skill-bar .skill-bar-js,
-.skill .skill-bar .skill-bar-php,
-.skill .skill-bar .skill-bar-mvc,
-.skill .skill-bar .skill-bar-mysql {
+.skill .skill-bar * {
     height: 10px;
     border-radius: 5px;
 }
 
-#container-projects .list-skills .skill .skill-bar {
+#container-skills .list-skills .skill .skill-bar {
     background-color: var(--dark-strong);
     margin-top: 20px;
     width: 100%;
@@ -460,6 +459,34 @@ footer>section {
 .skill .skill-bar .skill-bar-mysql {
     width: 80%;
     background-color: #ffffff;
+}
+
+.skill .skill-bar .skill-bar-android {
+    width: 40%;
+    background-color: #049e42;
+}
+
+.skill .skill-bar .skill-bar-kotlin {
+    width: 40%;
+    background-color: #4c4a92;
+}
+
+/**
+    CONTAINER PROJECT
+**/
+#container-projects {
+    margin-top: -2px;
+    min-height: 100vh;
+    background-color: #203142;
+    color: var(--color-text-default);
+}
+
+#container-projects>section {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #container-projects .list-projects {
@@ -826,6 +853,9 @@ footer {
 }
 
 @media(max-width:450px) {
+    #container-contacts .contact .group-form input{
+        min-width: 250px;
+    }
     #container-home .home-desc img {
         display: block;
         width: 90%;
