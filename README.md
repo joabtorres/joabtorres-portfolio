@@ -59,13 +59,11 @@ Desenvolvi este portfólio com o objetivo de divulgar minhas habilidades técnic
 
 
 ## SETUP
-1º Crie um virtual host com final `.loc`, pois o projeto foi desenvolvido utilizando o servidor devilbox (http://devilbox.org/);
+1º Crie um banco de dados MySQL e import o arquivo `joabtorres_banco_de_dados.sql`;
 
-2º Crie um banco de dados MySQL e import o arquivo `joabtorres_banco_de_dados.sql`;
+2º Acesse o arquivo Config.php em `source/Boot/Config.php`;
 
-3º Acesse o arquivo Config.php em `source/Boot/Config.php`;
-
-4º Configure as constantes;
+3º Configure as constantes;
 
 /**
 DATABASE
@@ -83,7 +81,7 @@ define("CONF_DB_NAME", "nome_do_banco");
 PROJECT URLs
  */
 
-define("CONF_URL_TEST", "https://joabtorres-portfolio.loc");
+define("CONF_URL_BASE", "https://localhost/joabtorres");
 
 /**
   MAIL

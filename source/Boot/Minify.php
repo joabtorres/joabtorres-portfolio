@@ -1,5 +1,5 @@
 <?php
-if(strpos(url(), ".loc")){
+if(strpos(url(), "localhost")){
     /**
      * CSS
      */

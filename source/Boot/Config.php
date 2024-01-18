@@ -3,16 +3,15 @@
 /**
  * DATABASE
  */
-define("CONF_DB_HOST", "172.16.238.10");
+define("CONF_DB_HOST", "localhost");
 define("CONF_DB_USER", "root");
 define("CONF_DB_PASS", "");
-define("CONF_DB_NAME", "bd_joabtorres");
+define("CONF_DB_NAME", "joabta");
 
 /**
  * PROJECT URLs
  */
-define("CONF_URL_BASE", "https://www.joabtorres.com.br");
-define("CONF_URL_TEST", "https://joabtorres-portfolio.loc");
+define("CONF_URL_BASE", "https://localhost/joabtorres-portfolio/");
 define("CONF_URL_ADMIN", "/admin");
 
 /**

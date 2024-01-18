@@ -185,6 +185,9 @@
                             <textarea name="message" rows="5" required placeholder="Mensagem..."></textarea>
                         </div>
                         <div class="group-form">
+                            <div class="g-recaptcha" data-sitekey="6LcVJlUpAAAAAIO-ItxE6H04Dkw4CjdiTKX7fv4s"></div>
+                        </div>
+                        <div class="group-form">
                             <button type="submit" name="submit" value="true"> <i class="fa-solid fa-share"></i>
                                 Enviar</button>
                         </div>
