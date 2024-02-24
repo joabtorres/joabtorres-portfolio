@@ -40,28 +40,13 @@
                     <img src="<?= theme("assets/images/user-profile.png") ?>" alt="<?= CONF_SITE_NAME . " | " . CONF_SITE_TITLE; ?>" title="<?= CONF_SITE_NAME . " | " . CONF_SITE_TITLE; ?>" />
                 </section>
                 <section class="desc-about">
-                    <p class="text-indent">Olá, meu nome é Joab Torres Alencar, sou Mestre em Desenvolvimento Rural e
-                        Gestão de
-                        Empreendimentos
-                        Agroalimentares; Especialista em Tecnologias para Aplicações Web; e Tecnólogo em Análise e
-                        Desenvolvimento
-                        de Sistema.</p>
+                    <p class="text-indent">Olá, sou Joab Torres Alencar, Mestre em Desenvolvimento Rural e Gestão de Empreendimentos Agroalimentares, Especialista em Tecnologias para Aplicações Web e Tecnólogo em Análise e Desenvolvimento de Sistemas. Com uma sólida formação acadêmica e vasta experiência profissional, destaco-me por minha paixão pela Tecnologia da Informação (TI) e minha constante busca por novos desafios no mercado de trabalho.</p>
 
-                    <p class="text-indent"> Sou Apaixonado por Tecnologia da Informação (TI), procuro está sempre
-                        preparado para novos
-                        desafios
-                        no
-                        mercado de trabalho, atuo tanto na área da docência quanto na área empresarial, principalmente
-                        no
-                        setor de desenvolvimento web utilizando as linguagens HTML, CSS, JavaScript e PHP, através de
-                        frameworks
-                        como Boostrap e Laravel. Entretanto, trabalho também com: Coordenação de equipe técnica;
-                        Validação
-                        de
-                        funcionalidades e usabilidades de softwares; Manutenção em computadores; Infraestrutura de rede;
-                        e
-                        Ministro aulas e palestras relacionadas à Tecnologia da Informação (TI).</p>
+                    <p class="text-indent"> Atuando tanto na área da docência quanto na área empresarial, concentro meus esforços no setor de desenvolvimento web, onde aplico minhas habilidades em linguagens como HTML, CSS, JavaScript e PHP, e utilizo frameworks renomados como Bootstrap e Laravel. Além disso, possuo expertise em coordenação de equipe técnica, validação de funcionalidades e usabilidades de softwares, manutenção em computadores e infraestrutura de rede.</p>
 
+                    <p class="text-indent">
+                        Com um histórico de sucesso em projetos diversos, sou reconhecido por minha capacidade de liderança, meu comprometimento com a excelência e minha habilidade em transmitir conhecimento. Estou sempre em busca de oportunidades que me permitam crescer profissionalmente e contribuir de forma significativa para o avanço da Tecnologia da Informação.
+                    </p>
                     <p><a href="<?= url("storage/media/joab-torres-alencar-curriculo-vitae.pdf") ?>" target="_blank" title="<?= CONF_SITE_NAME . " - Currículo Vitae" ?>"><i class="fa-solid fa-download"></i> Baixar Currículo Vitae.</a></p>
                     <p><a href="http://lattes.cnpq.br/0856780614635850" download="true" title="<?= CONF_SITE_NAME . "Currículo Lattes" ?>" target="_blank"><i class="fa-solid fa-download"></i> Baixar Currículo Lattes.</a></p>
                     <ul>

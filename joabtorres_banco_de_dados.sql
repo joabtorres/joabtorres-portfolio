@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.3
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: mysql
--- Generation Time: Aug 19, 2023 at 02:37 PM
--- Server version: 10.6.12-MariaDB-1:10.6.12+maria~ubu2004-log
--- PHP Version: 8.2.1
+-- Host: 127.0.0.1
+-- Tempo de geração: 25/02/2024 às 00:31
+-- Versão do servidor: 10.4.28-MariaDB
+-- Versão do PHP: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,13 +18,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `bd_joabtorres`
+-- Banco de dados: `joabta`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `categories`
+-- Estrutura para tabela `categories`
 --
 
 CREATE TABLE `categories` (
@@ -35,7 +35,7 @@ CREATE TABLE `categories` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `categories`
+-- Despejando dados para a tabela `categories`
 --
 
 INSERT INTO `categories` (`id`, `category`, `created_at`, `updated_at`) VALUES
@@ -46,7 +46,7 @@ INSERT INTO `categories` (`id`, `category`, `created_at`, `updated_at`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `projects`
+-- Estrutura para tabela `projects`
 --
 
 CREATE TABLE `projects` (
@@ -64,53 +64,53 @@ CREATE TABLE `projects` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Dumping data for table `projects`
+-- Despejando dados para a tabela `projects`
 --
 
 INSERT INTO `projects` (`id`, `category_id`, `title`, `image`, `description`, `tags`, `link_demo`, `link_github`, `link_youtube`, `created_at`, `updated_at`) VALUES
-(1, 1, 'SEMMA CASTANHAL', 'images/2023/website-semma.png', 'Desenvolvi o website da Secretária Municipal de Meio Ambiente de Castanhal em janeiro de 2023, com objetivo de ajudar na divulgação de informações públicas da secretaria para a comunidade. <br/> Este website conta um painel administrativo para gerenciar as informações de forma dinâmica ', 'HTML;CSS;JavaScript;Boostrap;JQuery;PHP;MVC;MySQL', 'https://www.semmacastanhal.com.br/', '', '', '2023-08-18 19:28:12', '2023-08-19 12:47:08'),
-(2, 2, 'SIGAPA', 'images/2023/sistema-sigapa.png', 'O projeto SIGAPA, foi desenvolvido como trabalho de dissertação de Mestrado, sem fins lucrativos, para a Associação de Pequenos Agricultores do Assentamento 15 de Agosto - APARAA. O projeto é um clone do SIGCOOT, sistema este desenvolvimento por mim como Trabalho de Conclusão de Curso na Graduação. <br />\r\nUsuário: sigapa<br />\r\nSenha: sigapa<br />', 'HTML;CSS;JavaScript;Boostrap;JQuery;PHP;MVC;MySQL', 'https://sigapa.joabtorres.com.br', 'https://github.com/joabtorres/sigapa', NULL, '2023-08-18 19:28:12', NULL),
-(3, 1, '\r\n\r\nFaculdade Cavanis', 'images/2023/website-cavanis.png', 'Este projeto foi desenvolvido em 2019, com apoio da Coordenação de Informática da faculdade, no qual eles ajudaram com o levantamento de requisitos para a aplicação. <br/>\r\nO site conta com um painel administrativo para publicação de notícias, mudança de banners na página inicial.', 'HTML;CSS;JavaScript;Bootstrap;PHP;MySQL', 'https://www.cavanis.edu.br/', NULL, NULL, '2023-08-19 16:37:37', NULL);
+(1, 1, 'SEMMA CASTANHAL', 'images/2023/website-semma.png', 'Em janeiro de 2023, desenvolvi o website da Secretaria Municipal de Meio Ambiente de Castanhal com o objetivo de auxiliar na divulgação de informações públicas da secretaria para a comunidade. O site inclui um painel administrativo para gerenciar as informações de forma dinâmica. ', 'HTML;CSS;JavaScript;Boostrap;JQuery;PHP;MVC;MySQL', 'https://www.semmacastanhal.com.br/', '', '', '2023-08-18 19:28:12', '2024-02-22 21:11:04'),
+(2, 2, 'SIGAPA', 'images/2023/sistema-sigapa.png', 'O projeto SIGAPA foi desenvolvido como trabalho de dissertação de Mestrado, sem fins lucrativos, para a Associação de Pequenos Agricultores do Assentamento 15 de Agosto - APARAA. Ele consiste em um clone do SIGCOOT, sistema que foi desenvolvido por mim como Trabalho de Conclusão de Curso na Graduação. <br />\r\nUsuário: sigapa<br />\r\nSenha: sigapa<br />', 'HTML;CSS;JavaScript;Boostrap;JQuery;PHP;MVC;MySQL', 'https://sigapa.joabtorres.com.br', 'https://github.com/joabtorres/sigapa', NULL, '2023-08-18 19:28:12', NULL),
+(3, 1, '\r\n\r\nFaculdade Cavanis', 'images/2023/website-cavanis.png', 'Este projeto foi desenvolvido em 2019, com o apoio da Coordenação de Informática da faculdade, que contribuiu com o levantamento de requisitos para a aplicação. O site possui um painel administrativo que permite a publicação de notícias e a alteração de banners na página inicial.', 'HTML;CSS;JavaScript;Bootstrap;PHP;MySQL', 'https://www.cavanis.edu.br/', NULL, NULL, '2023-08-19 16:37:37', NULL);
 
 --
--- Indexes for dumped tables
+-- Índices para tabelas despejadas
 --
 
 --
--- Indexes for table `categories`
+-- Índices de tabela `categories`
 --
 ALTER TABLE `categories`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `projects`
+-- Índices de tabela `projects`
 --
 ALTER TABLE `projects`
   ADD PRIMARY KEY (`id`),
   ADD KEY `fk_category` (`category_id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT para tabelas despejadas
 --
 
 --
--- AUTO_INCREMENT for table `categories`
+-- AUTO_INCREMENT de tabela `categories`
 --
 ALTER TABLE `categories`
   MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT for table `projects`
+-- AUTO_INCREMENT de tabela `projects`
 --
 ALTER TABLE `projects`
   MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- Constraints for dumped tables
+-- Restrições para tabelas despejadas
 --
 
 --
--- Constraints for table `projects`
+-- Restrições para tabelas `projects`
 --
 ALTER TABLE `projects`
   ADD CONSTRAINT `fk_category` FOREIGN KEY (`category_id`) REFERENCES `categories` (`id`);
