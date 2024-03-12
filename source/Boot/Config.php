@@ -11,7 +11,7 @@ define("CONF_DB_NAME", "joabta");
 /**
  * PROJECT URLs
  */
-define("CONF_URL_BASE", "https://localhost/joabtorres-portfolio/");
+define("CONF_URL_BASE", "https://localhost/joabtorres-portfolio");
 define("CONF_URL_ADMIN", "/admin");
 
 /**

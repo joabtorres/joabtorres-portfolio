@@ -33,7 +33,7 @@ class Web extends Controller
      */
     public function home(): void
     {
-        $projects = (new Project)->find()->fetch(true);
+        $projects = (new Project)->find()->order("id DESC")->fetch(true);
         $head = $this->seo->render(
             CONF_SITE_NAME . " - " . CONF_SITE_TITLE,
             CONF_SITE_DESC,
